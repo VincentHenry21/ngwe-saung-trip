@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ngwe Saung School Trip · Checklist · Nov 4 to 6, 2026</title>
+<style>
+  :root{
+    --bg:#0e2a38; --bg2:#12394d; --card:#ffffff; --ink:#16323f; --muted:#5c7482;
+    --accent:#0e7c86; --accent2:#f2a541; --line:#e3ecef; --done:#8aa5b1;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:linear-gradient(160deg,var(--bg),var(--bg2) 55%,#0b5563);
+    color:var(--ink); min-height:100vh; padding:20px 14px 60px;
+  }
+  .wrap{max-width:760px; margin:0 auto;}
+  header{
+    color:#fff; text-align:center; padding:26px 16px 8px;
+  }
+  header .kicker{letter-spacing:.22em; font-size:11px; text-transform:uppercase; color:#9fd4da;}
+  header h1{font-size:34px; font-weight:800; margin:8px 0 6px;}
+  header p{color:#cfe6ea; font-size:15px;}
+  .progress-card{
+    background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18);
+    border-radius:16px; padding:14px 16px; margin:18px 0 6px; color:#fff;
+    backdrop-filter:blur(6px);
+  }
+  .progress-top{display:flex; justify-content:space-between; font-size:13px; margin-bottom:8px;}
+  .bar{height:10px; background:rgba(255,255,255,.22); border-radius:99px; overflow:hidden;}
+  .bar > div{height:100%; width:0%; background:linear-gradient(90deg,var(--accent2),#ffd166); border-radius:99px; transition:width .3s ease;}
+  section{
+    background:var(--card); border-radius:18px; padding:18px 18px 10px;
+    margin-top:16px; box-shadow:0 10px 30px rgba(0,0,0,.18);
+  }
+  section h2{font-size:18px; display:flex; align-items:center; gap:10px; margin-bottom:4px;}
+  section h2 .tag{font-size:11px; font-weight:700; color:#fff; background:var(--accent); border-radius:99px; padding:3px 9px; letter-spacing:.04em;}
+  section .sub{color:var(--muted); font-size:13px; margin-bottom:10px;}
+  ul{list-style:none;}
+  li{border-top:1px solid var(--line);}
+  li:first-of-type{border-top:none;}
+  label{display:flex; align-items:flex-start; gap:12px; padding:11px 4px; cursor:pointer; font-size:15px; line-height:1.45;}
+  input[type=checkbox]{width:21px; height:21px; flex:0 0 auto; margin-top:1px; accent-color:var(--accent); cursor:pointer;}
+  label span small{display:block; color:var(--muted); font-size:12.5px;}
+  input[type=checkbox]:checked + span{color:var(--done); text-decoration:line-through;}
+  .actions{display:flex; gap:10px; justify-content:center; margin-top:22px; flex-wrap:wrap;}
+  button{
+    border:none; border-radius:99px; padding:11px 20px; font-size:14px; font-weight:700; cursor:pointer;
+  }
+  .btn-print{background:#fff; color:var(--ink);}
+  .btn-reset{background:transparent; color:#cfe6ea; border:1px solid rgba(255,255,255,.4);}
+  footer{text-align:center; color:#9fc3cb; font-size:12.5px; margin-top:18px;}
+  @media print{
+    body{background:#fff; padding:0;}
+    .progress-card,.actions{display:none;}
+    section{box-shadow:none; border:1px solid #ccc;}
+    header{color:#000;} header p, header .kicker{color:#333;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">NMA College · School Trip</div>
+    <h1>Ngwe Saung Trip Checklist</h1>
+    <p>Wednesday Nov 4 to Friday Nov 6, 2026 · 3 days, 2 nights at the beach</p>
+    <div class="progress-card">
+      <div class="progress-top"><span id="ptext">0 of 0 packed</span><span id="ppct">0%</span></div>
+      <div class="bar"><div id="pfill"></div></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Documents and Money <span class="tag">FIRST</span></h2>
+    <p class="sub">Keep these in your day bag, not in your main luggage.</p>
+    <ul>
+      <li><label><input type="checkbox" id="d1"><span>National ID card (NRC)<small>Original plus a photo of it on your phone</small></span></label></li>
+      <li><label><input type="checkbox" id="d2"><span>Student ID card</span></label></li>
+      <li><label><input type="checkbox" id="d3"><span>Cash in MMK<small>Small notes for snacks, boat trips and souvenirs. Card machines are rare in Ngwe Saung</small></span></label></li>
+      <li><label><input type="checkbox" id="d4"><span>KBZPay topped up and working</span></label></li>
+      <li><label><input type="checkbox" id="d5"><span>Trip fee receipt or confirmation from school</span></label></li>
+      <li><label><input type="checkbox" id="d6"><span>Emergency contacts saved in phone<small>Teacher in charge, a parent, hotel number</small></span></label></li>
+      <li><label><input type="checkbox" id="d7"><span>Phone topped up with data package<small>Signal can be weak at the beach, buy before you leave Yangon</small></span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Clothes</h2>
+    <p class="sub">Early November is dry season: hot days, cooler evenings, sea is warm.</p>
+    <ul>
+      <li><label><input type="checkbox" id="c1"><span>T-shirts or shirts x 4</span></label></li>
+      <li><label><input type="checkbox" id="c2"><span>Shorts x 2</span></label></li>
+      <li><label><input type="checkbox" id="c3"><span>Light long pants x 1<small>For the bus ride and evenings</small></span></label></li>
+      <li><label><input type="checkbox" id="c4"><span>Swimwear x 2<small>One to wear while the other dries</small></span></label></li>
+      <li><label><input type="checkbox" id="c5"><span>Underwear and socks x 3 sets</span></label></li>
+      <li><label><input type="checkbox" id="c6"><span>Sleepwear</span></label></li>
+      <li><label><input type="checkbox" id="c7"><span>Light jacket or hoodie<small>Bus aircon gets cold on the 6 hour ride</small></span></label></li>
+      <li><label><input type="checkbox" id="c8"><span>One nicer outfit<small>For group dinner and photos</small></span></label></li>
+      <li><label><input type="checkbox" id="c9"><span>Sandals or flip flops</span></label></li>
+      <li><label><input type="checkbox" id="c10"><span>Walking shoes (the pair you travel in)</span></label></li>
+      <li><label><input type="checkbox" id="c11"><span>Cap or hat</span></label></li>
+      <li><label><input type="checkbox" id="c12"><span>Sunglasses</span></label></li>
+      <li><label><input type="checkbox" id="c13"><span>Laundry bag for wet and dirty clothes</span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Beach Essentials</h2>
+    <ul>
+      <li><label><input type="checkbox" id="b1"><span>Sunscreen SPF 50<small>Reapply after every swim</small></span></label></li>
+      <li><label><input type="checkbox" id="b2"><span>Waterproof phone pouch<small>For boat trips and beach photos</small></span></label></li>
+      <li><label><input type="checkbox" id="b3"><span>Quick dry towel or microfiber towel</span></label></li>
+      <li><label><input type="checkbox" id="b4"><span>Dry bag or ziplock bags x 3<small>For wet swimwear on the way home</small></span></label></li>
+      <li><label><input type="checkbox" id="b5"><span>Insect repellent<small>Sandflies bite at sunset in Ngwe Saung</small></span></label></li>
+      <li><label><input type="checkbox" id="b6"><span>Aloe vera or after sun gel</span></label></li>
+      <li><label><input type="checkbox" id="b7"><span>Reusable water bottle</span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Toiletries and Health</h2>
+    <ul>
+      <li><label><input type="checkbox" id="t1"><span>Toothbrush and toothpaste</span></label></li>
+      <li><label><input type="checkbox" id="t2"><span>Shampoo and body wash (travel size)</span></label></li>
+      <li><label><input type="checkbox" id="t3"><span>Deodorant</span></label></li>
+      <li><label><input type="checkbox" id="t4"><span>Face wash and moisturizer</span></label></li>
+      <li><label><input type="checkbox" id="t5"><span>Lip balm with SPF</span></label></li>
+      <li><label><input type="checkbox" id="t6"><span>Motion sickness tablets<small>The Yangon to Ngwe Saung road is winding, take one before the bus leaves</small></span></label></li>
+      <li><label><input type="checkbox" id="t7"><span>Personal medication, if any</span></label></li>
+      <li><label><input type="checkbox" id="t8"><span>Plasters and basic first aid</span></label></li>
+      <li><label><input type="checkbox" id="t9"><span>Hand sanitizer and wet wipes</span></label></li>
+      <li><label><input type="checkbox" id="t10"><span>Tissues</span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tech and Gear</h2>
+    <ul>
+      <li><label><input type="checkbox" id="g1"><span>Phone charger</span></label></li>
+      <li><label><input type="checkbox" id="g2"><span>Power bank, fully charged<small>Hotel power can cut out, and you will shoot a lot of photos</small></span></label></li>
+      <li><label><input type="checkbox" id="g3"><span>Earphones or earbuds</span></label></li>
+      <li><label><input type="checkbox" id="g4"><span>Camera, if you are bringing one for the media work</span></label></li>
+      <li><label><input type="checkbox" id="g5"><span>Small day backpack<small>For beach days and island trips</small></span></label></li>
+      <li><label><input type="checkbox" id="g6"><span>Notebook and pen<small>In case teachers hand out trip tasks</small></span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Snacks and Bus Ride</h2>
+    <p class="sub">About 6 hours each way. Pack the day bag, not the suitcase.</p>
+    <ul>
+      <li><label><input type="checkbox" id="s1"><span>Water for the ride</span></label></li>
+      <li><label><input type="checkbox" id="s2"><span>Snacks: biscuits, nuts, dried fruit</span></label></li>
+      <li><label><input type="checkbox" id="s3"><span>Mints or ginger candy for the winding road</span></label></li>
+      <li><label><input type="checkbox" id="s4"><span>Neck pillow, optional but worth it</span></label></li>
+      <li><label><input type="checkbox" id="s5"><span>Playlist or downloads ready offline</span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Before You Leave Home <span class="tag">NOV 3</span></h2>
+    <ul>
+      <li><label><input type="checkbox" id="h1"><span>Charge phone and power bank overnight</span></label></li>
+      <li><label><input type="checkbox" id="h2"><span>Confirm the meeting point and departure time with the teacher</span></label></li>
+      <li><label><input type="checkbox" id="h3"><span>Share the trip plan and hotel name with family</span></label></li>
+      <li><label><input type="checkbox" id="h4"><span>Pack the bag the night before, weigh it, lock it</span></label></li>
+      <li><label><input type="checkbox" id="h5"><span>Sleep early, set two alarms</span></label></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>On the Way Back <span class="tag">NOV 6</span></h2>
+    <ul>
+      <li><label><input type="checkbox" id="r1"><span>Check room for chargers, ID and swimwear</span></label></li>
+      <li><label><input type="checkbox" id="r2"><span>Wet clothes sealed in the dry bag</span></label></li>
+      <li><label><input type="checkbox" id="r3"><span>Souvenirs packed safely<small>Ngwe Saung is known for dried seafood and coconut products</small></span></label></li>
+      <li><label><input type="checkbox" id="r4"><span>Back up your trip photos before the bus ride</span></label></li>
+    </ul>
+  </section>
+
+  <div class="actions">
+    <button class="btn-print" onclick="window.print()">Print list</button>
+    <button class="btn-reset" onclick="resetAll()">Reset all ticks</button>
+  </div>
+  <footer>Your ticks save automatically on this device. Have a great trip, Thit Sar.</footer>
+</div>
+
+<script>
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox]'));
+  var KEY = 'ngwesaung-trip-2026';
+  function load(){
+    try{
+      var saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+      boxes.forEach(function(b){ b.checked = !!saved[b.id]; });
+    }catch(e){}
+    update();
+  }
+  function save(){
+    var state = {};
+    boxes.forEach(function(b){ state[b.id] = b.checked; });
+    try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
+  }
+  function update(){
+    var done = boxes.filter(function(b){ return b.checked; }).length;
+    document.getElementById('ptext').textContent = done + ' of ' + boxes.length + ' packed';
+    var pct = boxes.length ? Math.round(done / boxes.length * 100) : 0;
+    document.getElementById('ppct').textContent = pct + '%';
+    document.getElementById('pfill').style.width = pct + '%';
+  }
+  boxes.forEach(function(b){
+    b.addEventListener('change', function(){ save(); update(); });
+  });
+  function resetAll(){
+    boxes.forEach(function(b){ b.checked = false; });
+    save(); update();
+  }
+  load();
+</script>
+</body>
+</html>
